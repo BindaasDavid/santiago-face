@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago Face Attack</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <p class="home-link"><a href="index.html">All games</a></p>
+        <h1>Santiago Face Attack</h1>
+        <p class="tagline">Eat the dots. Dodge the Santiagos.</p>
+      </header>
+
+      <div class="hud">
+        <div>SCORE <span id="score">0</span></div>
+        <div>LIVES <span id="lives">3</span></div>
+        <div>LEVEL <span id="level">1</span></div>
+      </div>
+
+      <div class="stage">
+        <canvas id="game" width="672" height="744" aria-label="Santiago Face Attack game"></canvas>
+        <div id="overlay" class="overlay">
+          <div class="card">
+            <img src="santiago.jpg" alt="Santiago" class="title-face" />
+            <h2 id="overlay-title">Santiago Face Attack</h2>
+            <p id="overlay-text">Arrow keys, WASD, or the buttons below. Eat pellets. Power pellets turn the Santiagos blue — chomp them for bonus points.</p>
+            <button id="start-btn" type="button">Start Game</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="dpad" aria-label="Direction controls">
+        <button type="button" data-dir="up">Up</button>
+        <div class="dpad-mid">
+          <button type="button" data-dir="left">Left</button>
+          <button type="button" data-dir="right">Right</button>
+        </div>
+        <button type="button" data-dir="down">Down</button>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
