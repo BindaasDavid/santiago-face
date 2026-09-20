@@ -17,14 +17,16 @@
       <header>
         <p class="home-link"><a href="../index.html">All games</a></p>
         <h1>TRANSFORMERS</h1>
-        <p class="tagline">Robot hero vs. evil robot pigs. Grab power-ups. Watch the gray pigs' tomato launchers!</p>
+        <p class="tagline">A long run against robot pigs, then a whale boss with an oversized tomato blaster.</p>
       </header>
 
       <div class="hud">
         <div>ENERGY <span id="hp">8</span></div>
         <div>PIGS <span id="pigs-left">0</span></div>
+        <div>BOSS <span id="boss">—</span></div>
         <div>POWER <span id="power">NONE</span></div>
         <div>MODE <span id="mode">ROBOT</span></div>
+        <div>SPEED <span id="speed">1.00x</span></div>
       </div>
 
       <div class="stage">
@@ -33,9 +35,13 @@
           <div class="card">
             <h2 id="overlay-title">TRANSFORMERS</h2>
             <p id="overlay-text">
-              Move with arrows or WASD. Jump with Space. Shoot with F or J.
-              Press T to transform into a truck and ram the pigs.
-              Collect power-ups. Defeat every pig. Gray pigs launch tomatoes.
+              Move with arrows or WASD. Jump with Space — tap again in the air for a double jump.
+              Fire the energy blaster with F or J. Press T to transform into a truck and ram pigs.
+              Collect power-ups. GoGo Squeezes make you invincible for 20 seconds.
+              Type G-O-G-O quickly to activate the drone attack. Press V to turn invisible.
+              T transforms with sound and animation. D increases speed, S decreases it.
+              Clear the long pig run. Whale bosses spawn with extra white shield layers —
+              climb each parkour crystal to peel a layer, then fight.
             </p>
             <button id="start-btn" type="button">Start Mission</button>
           </div>
@@ -46,8 +52,11 @@
         <button type="button" data-act="left">Left</button>
         <button type="button" data-act="right">Right</button>
         <button type="button" data-act="jump">Jump</button>
-        <button type="button" data-act="shoot">Shoot</button>
+        <button type="button" data-act="shoot">Blaster</button>
         <button type="button" data-act="transform">Transform</button>
+        <button type="button" data-act="invis">Invisible</button>
+        <button type="button" data-act="swarm">Swarm K</button>
+        <button type="button" data-act="bombs">Bombs L</button>
       </div>
     </div>
     <script src="game.js"></script>
